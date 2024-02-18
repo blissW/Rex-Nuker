@@ -1,5 +1,5 @@
 # modules lol
-import discord, replit, requests, threading, json
+import discord, requests, threading, json
 from discord.ext import commands
 from discord.utils import get
 from itertools import cycle
@@ -12,13 +12,11 @@ channels = config.get('Channel Names')
 rolenames = config.get('Role Names')
 message = config.get('Spam Message')
 servernamechange = config.get('Guild Change')
-person = "JOHNNY"
+person = "blissmakemoneyy"
 e = (f"\x1b[38;5;21m{prefix}nn \033[37m& \x1b[38;5;21m{prefix}ww")
 
 # # # # # # # #
 
-intents = discord.Intents.default()
-intents.members = True
 bot = commands.Bot(command_prefix = prefix, intents=intents, help_command=None)
 
 @bot.event
